@@ -57,7 +57,7 @@ urootp <- function(x) {
   # Combine all results into a single dataframe
   final_results <- do.call(rbind, results)
 
-  return(final_results)
+  return(suppressWarnings(final_results))
 }
 
 
@@ -110,5 +110,5 @@ urootc <- function(x) {
   # Combine all results into a single dataframe
   final_results <- do.call(rbind, results)
 
-  return(final_results)
+  return(suppressWarnings(final_results))
 }
